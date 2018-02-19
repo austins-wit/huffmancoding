@@ -1,0 +1,61 @@
+
+
+
+1.4 Operating Systems
+
+
+
+The operating system (OS) is the most important program that runs on a computer. The OS manages and controls a computer’s activities.
+The popular operating systems for general-purpose computers are Microsoft Windows, Mac OS, and Linux. Application programs, such as a web browser or a word processor, cannot run unless an operating system is installed and running on the computer. Figure 1.5 shows the interrelationship of hardware, operating system, application software, and the user.
+
+operating system (OS)
+ The flow chart has 4 boxes, and 4 connections. Top to bottom, box 1 represents user, connected to box 2, application programs, connected to box 3, operating system, connected to box 4, and hardware. Note, box 1 also connects to box 3. 
+
+
+Figure 1.5
+
+
+Users and applications access the computer’s hardware via the operating system.
+The major tasks of an operating system are as follows:
+•Controlling and monitoring system activities
+•Allocating and assigning system resources
+•Scheduling operations
+
+
+1.4.1 Controlling and Monitoring System Activities
+
+Operating systems perform basic tasks, such as recognizing input from the keyboard, sending output to the monitor, keeping track of files and folders on storage devices, and controlling peripheral devices such as disk drives and printers. An operating system must also ensure different programs and users working at the same time do not interfere with each other. In addition, the OS is responsible for security, ensuring unauthorized users and programs are not allowed to access the system.
+
+
+1.4.2 Allocating and Assigning System Resources
+
+The operating system is responsible for determining what computer resources a program needs (such as CPU time, memory space, disks, and input and output devices) and for allocating and assigning them to run the program.
+
+
+1.4.3 Scheduling Operations
+
+The OS is responsible for scheduling programs’ activities to make efficient use of system resources. Many of today’s operating systems support techniques such as multiprogramming, multithreading, and multiprocessing to increase system performance.
+Multiprogramming allows multiple programs such as Microsoft Word, E-mail, and web browser to run simultaneously by sharing the same CPU. The CPU is much faster than the computer’s other components. As a result, it is idle most of the time—for example, while waiting for data to be transferred from a disk or waiting for other system resources to respond. A multiprogramming OS takes advantage of this situation by allowing multiple programs to use the CPU when it would otherwise be idle. For example, multiprogramming enables you to use a word processor to edit a file at the same time as your web browser is downloading a file.
+
+multiprogramming
+Multithreading allows a single program to execute multiple tasks at the same time. For instance, a word-processing program allows users to simultaneously edit text and save it to a disk. In this example, editing and saving are two tasks within the same program. These two tasks may run concurrently.
+
+multithreading
+Multiprocessing is similar to multithreading. The difference is that multithreading is for running multithreads concurrently within one program, but multiprocessing is for running multiple programs concurrently using multiple processors.
+
+multiprocessing
+
+
+
+1.4.1 What is an operating system? List some popular operating systems.
+
+1.4.2 What are the major responsibilities of an operating system?
+
+1.4.3 What are multiprogramming, multithreading, and multiprocessing?
+
+
+
+
+(Liang 9-10)
+Liang, Y. D. Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition. Pearson, 20170612. VitalBook file.
+The citation provided is a guideline. Please check each citation for accuracy before use.

@@ -1,0 +1,122 @@
+
+
+
+1.3 Programming Languages
+
+
+
+Computer programs, known as software, are instructions that tell a computer what to do.
+Computers do not understand human languages, so programs must be written in a language a computer can use. There are hundreds of programming languages, and they were developed to make the programming process easier for people. However, all programs must be converted into the instructions the computer can execute.
+
+
+1.3.1 Machine Language
+
+A computer’s native language, which differs among different types of computers, is its machine language—a set of built-in primitive instructions. These instructions are in the form of binary code, so if you want to give a computer an instruction in its native language, you have to enter the instruction as binary code. For example, to add two numbers, you might have to write an instruction in binary code as follows: 
+
+machine language
+1101101010011010
+
+
+1.3.2 Assembly Language
+
+Programming in machine language is a tedious process. Moreover, programs written in machine language are very difficult to read and modify. For this reason, assembly language was created in the early days of computing as an alternative to machine languages. Assembly language uses a short descriptive word, known as a mnemonic, to represent each of the machine-language instructions. For example, the mnemonic add typically means to add numbers, and sub means to subtract numbers. To add the numbers 2 and 3 and get the result, you might write an instruction in assembly code as follows:
+
+assembly languageadd 2, 3, result
+Assembly languages were developed to make programming easier. However, because the computer cannot execute assembly language, another program—called an assembler—is used to translate assembly-language programs into machine code, as shown in Figure 1.3.
+
+assembler
+ The assembler translates descriptive instructions from the assembly source file into strings of numbers in the machine code file. Example: the instruction, add 2 comma 3 comma result, translates into the code, 1 1 0 1 1 0 1 0 1 0 0 1 1 0 1 0. 
+
+
+Figure 1.3
+
+
+An assembler translates assembly-language instructions into machine code.
+Writing code in assembly language is easier than in machine language. However, it is still tedious to write code in assembly language. An instruction in assembly language essentially corresponds to an instruction in machine code. Writing in assembly language requires that you know how the CPU works. Assembly language is referred to as a low-level language, because assembly language is close in nature to machine language and is machine dependent.
+
+low-level language
+
+
+1.3.3 High-Level Language
+
+In the 1950s, a new generation of programming languages known as high-level languages emerged. They are platform independent, which means that you can write a program in a high-level language and run it in different types of machines. High-level languages are similar to English and easy to learn and use. The instructions in a high-level programming language are called statements. Here, for example, is a high-level language statement that computes the area of a circle with a radius of 5:
+
+high-level language
+
+statementarea = 5 * 5 * 3.14159;
+There are many high-level programming languages, and each was designed for a specific purpose. Table 1.1 lists some popular ones.
+
+
+
+Table  1.1 Popular High-Level Programming Languages
+
+
+
+
+Language
+
+Description
+
+Ada
+Named for Ada Lovelace, who worked on mechanical general-purpose computers. ­Developed for the Department of Defense and used mainly in defense projects.
+BASIC
+Beginner’s All-purpose Symbolic Instruction Code. Designed to be learned and used easily by beginners.
+C
+Developed at Bell Laboratories. Combines the power of an assembly language with the ease of use and portability of a high-level language.
+C++
+An object-oriented language, based on C
+C#
+Pronounced “C Sharp.” An object-oriented programming language developed by Microsoft.
+COBOL
+COmmon Business Oriented Language. Used for business applications.
+FORTRAN
+FORmula TRANslation. Popular for scientific and mathematical applications.
+Java
+Developed by Sun Microsystems, now part of Oracle. An object-oriented programming language, widely used for developing platform-independent Internet applications.
+JavaScript
+A Web programming language developed by Netscape
+Pascal
+Named for Blaise Pascal, who pioneered calculating machines in the seventeenth century. A simple, structured, general-purpose language primarily for teaching programming.
+Python
+A simple general-purpose scripting language good for writing short programs.
+Visual Basic
+Visual Basic was developed by Microsoft. Enables the programmers to rapidly develop Windows-based applications.
+A program written in a high-level language is called a source program or source code. Because a computer cannot execute a source program, a source program must be translated into machine code for execution. The translation can be done using another programming tool called an interpreter or a compiler.
+
+source program
+
+source code
+
+interpreter
+
+compiler
+•An interpreter reads one statement from the source code, translates it to the machine code or virtual machine code, then executes it right away, as shown in ­Figure 1.4a. Note a statement from the source code may be translated into several machine instructions.
+ Figures ay and b show two methods for translating the same high-level source file statement into output on a computer monitor. 
+
+
+Figure 1.4
+
+
+(a) An interpreter translates and executes a program one statement at a time. (b) A compiler translates the entire source program into a machine-language file for execution.
+Description
+
+•A compiler translates the entire source code into a machine-code file, and the machine-code file is then executed, as shown in Figure 1.4b.
+
+
+
+1.3.1 What language does the CPU understand?
+
+1.3.2 What is an assembly language? What is an assembler?
+
+1.3.3 What is a high-level programming language? What is a source program?
+
+1.3.4 What is an interpreter? What is a compiler?
+
+1.3.5 What is the difference between an interpreted language and a compiled language?
+
+
+
+
+(Liang 7-9)
+Liang, Y. D. Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition. Pearson, 20170612. VitalBook file.
+The citation provided is a guideline. Please check each citation for accuracy before use.

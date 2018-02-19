@@ -1,0 +1,29 @@
+
+
+
+1.5 Java, the World Wide Web, and Beyond
+
+
+
+Java is a powerful and versatile programming language for developing software running on mobile devices, desktop computers, and servers.
+This book introduces Java programming. Java was developed by a team led by James Gosling at Sun Microsystems. Sun Microsystems was purchased by Oracle in 2010. Originally called Oak, Java was designed in 1991 for use in embedded chips in consumer electronic appliances. In 1995, renamed Java, it was redesigned for developing web applications. For the history of Java, see www.java.com/en/javahistory/index.jsp.
+Java has become enormously popular. Its rapid rise and wide acceptance can be traced to its design characteristics, particularly its promise that you can write a program once and run it ­anywhere. As stated by its designer, Java is simple, object oriented, distributed, ­interpreted, robust, secure, architecture neutral, portable, high performance, multithreaded, and dynamic. For the anatomy of Java characteristics, see liveexample.pearsoncmg.com/etc/JavaCharacteristics.pdf.
+Java is a full-featured, general-purpose programming language that can be used to develop robust mission-critical applications. Today, it is employed not only for web programming but also for developing stand-alone applications across platforms on servers, desktop computers, and mobile devices. It was used to develop the code to communicate with and control the robotic rover on Mars. Many companies that once considered Java to be more hype than substance are now using it to create distributed applications accessed by customers and partners across the Internet. For every new project being developed today, companies are asking how they can use Java to make their work easier.
+The World Wide Web is an electronic information repository that can be accessed on the Internet from anywhere in the world. The Internet, the Web’s infrastructure, has been around for more than 40 years. The colorful World Wide Web and sophisticated web browsers are the major reason for the Internet’s popularity.
+Java initially became attractive because Java programs can run from a web browser. Such programs are called applets. Today applets are no longer allowed to run from a Web browser in the latest version of Java due to security issues. Java, however, is now very popular for developing applications on web servers. These applications process data, perform computations, and generate dynamic webpages. Many commercial Websites are developed using Java on the backend.
+Java is a versatile programming language: You can use it to develop applications for desktop computers, servers, and small handheld devices. The software for Android cell phones is developed using Java.
+
+
+
+1.5.1 Who invented Java? Which company owns Java now?
+
+1.5.2 What is a Java applet?
+
+1.5.3 What programming language does Android use?
+
+
+
+
+(Liang 10-11)
+Liang, Y. D. Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition. Pearson, 20170612. VitalBook file.
+The citation provided is a guideline. Please check each citation for accuracy before use.

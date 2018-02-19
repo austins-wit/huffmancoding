@@ -1,0 +1,152 @@
+
+
+
+1.8 Creating, Compiling, and Executing a Java Program
+
+
+
+You save a Java program in a .java file and compile it into a .class file. The .class file is executed by the Java Virtual Machine (JVM).
+You have to create your program and compile it before it can be executed. This process is repetitive, as shown in Figure 1.6. If your program has compile errors, you have to modify the program to fix them, then recompile it. If your program has runtime errors or does not produce the correct result, you have to modify the program, recompile it, and execute it again.
+ A flow chart shows the process for creating and modifying source code. 
+
+
+Figure 1.6
+
+
+The Java program-development process consists of repeatedly creating/modifying source code, compiling, and executing programs.
+Description
+
+You can use any text editor or IDE to create and edit a Java source-code file. This section demonstrates how to create, compile, and run Java programs from a command window. Sections 1.11 and 1.12 will introduce developing Java programs using NetBeans and Eclipse. From the command window, you can use a text editor such as Notepad to create the Java source-code file, as shown in Figure 1.7.
+
+command window
+ A Notepad window titled, Welcome, displays the code from listing 1.1. 
+
+
+Figure 1.7
+
+
+You can create a Java source file using Windows Notepad.
+
+
+ Note 
+
+The source file must end with the extension .java and must have the same exact name as the public class name. For example, the file for the source code in Listing 1.1 should be named Welcome.java, since the public class name is Welcome.
+
+file name Welcome.java,
+A Java compiler translates a Java source file into a Java bytecode file. The following command compiles Welcome.java:
+
+compile
+javac Welcome.java
+
+
+ Note 
+
+You must first install and configure the JDK before you can compile and run programs. See Supplement I.B, Installing and Configuring JDK 8, for how to install the JDK and set up the environment to compile and run Java programs. If you have trouble compiling and running programs, see Supplement I.C, Compiling and Running Java from the Command Window. This supplement also explains how to use basic DOS commands and how to use Windows Notepad to create and edit files. All the supplements are accessible from the Companion Website.
+
+Supplement I.B
+
+Supplement I.C
+If there aren’t any syntax errors, the compiler generates a bytecode file with a .class extension. Thus, the preceding command generates a file named Welcome.class, as shown in Figure 1.8a. The Java language is a high-level language, but Java bytecode is a low-level language. The bytecode is similar to machine instructions but is architecture neutral and can run on any platform that has a Java Virtual Machine (JVM), as shown in Figure 1.8b. Rather than a physical machine, the virtual machine is a program that interprets Java bytecode. This is one of Java’s primary advantages: Java bytecode can run on a variety of hardware platforms and operating systems. Java source code is compiled into Java bytecode, and Java bytecode is interpreted by the JVM. Your Java code may use the code in the Java library. The JVM executes your code along with the code in the library.
+
+.class bytecode file
+
+bytecode
+
+Java Virtual Machine (JVM)
+ Two figures show the relationships between bytecode, virtual machines, and computers. 
+
+
+Figure 1.8
+
+
+(a) Java source code is translated into bytecode. (b) Java bytecode can be executed on any computer with a Java Virtual Machine.
+Description
+
+To execute a Java program is to run the program’s bytecode. You can execute the bytecode on any platform with a JVM, which is an interpreter. It translates the individual instructions in the bytecode into the target machine language code one at a time, rather than the whole program as a single unit. Each step is executed immediately after it is translated.
+
+interpret bytecode
+The following command runs the bytecode for Listing 1.1:
+
+run
+java Welcome
+Figure 1.9 shows the javac command for compiling Welcome.java. The compiler generates the Welcome.class file, and this file is executed using the java command.
+
+javac command
+
+java command
+
+
+ Note 
+
+For simplicity and consistency, all source-code and class files used in this book are placed under c:\book unless specified otherwise.
+
+c:\book
+ A window titled, command prompt, showing output for multiple commands. 
+
+
+Figure 1.9
+
+
+The output of Listing 1.1 displays the message “Welcome to Java!”
+Description
+
+
+
+Compile and run a Java program
+
+
+ Caution 
+
+Do not use the extension .class in the command line when executing the program. Use java ClassName to run the program. If you use java ClassName.class in the command line, the system will attempt to fetch ClassName.class.class.
+
+java ClassName
+
+
+ Tip 
+
+If you execute a class file that does not exist, a NoClassDefFoundError will occur. If you execute a class file that does not have a main method or you mistype the main method (e.g., by typing Main instead of main), a NoSuchMethodError will occur.
+
+NoClassDefFoundError
+
+NoSuchMethodError
+
+
+ Note 
+
+When executing a Java program, the JVM first loads the bytecode of the class to memory using a program called the class loader. If your program uses other classes, the class loader dynamically loads them just before they are needed. After a class is loaded, the JVM uses a program called the bytecode verifier to check the validity of the bytecode and to ensure that the bytecode does not violate Java’s security restrictions. Java enforces strict security to make sure Java class files are not tampered with and do not harm your computer.
+
+class loader
+
+bytecode verifier
+
+
+ Pedagogical Note 
+
+Your instructor may require you to use packages for organizing programs. For example, you may place all programs in this chapter in a package named chapter1. For instructions on how to use packages, see Supplement I.F, Using Packages to Organize the Classes in the Text.
+
+use package
+
+
+
+1.8.1 What is the Java source filename extension, and what is the Java bytecode filename extension?
+
+1.8.2 What are the input and output of a Java compiler?
+
+1.8.3 What is the command to compile a Java program?
+
+1.8.4 What is the command to run a Java program?
+
+1.8.5 What is the JVM?
+
+1.8.6 Can Java run on any machine? What is needed to run Java on a computer?
+
+1.8.7 If a NoClassDefFoundError occurs when you run a program, what is the cause of the error?
+
+1.8.8 If a NoSuchMethodError occurs when you run a program, what is the cause of the error?
+
+
+
+
+(Liang 15-18)
+Liang, Y. D. Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition. Pearson, 20170612. VitalBook file.
+The citation provided is a guideline. Please check each citation for accuracy before use.

@@ -1,0 +1,74 @@
+
+
+
+1.9 Programming Style and Documentation
+
+
+
+Good programming style and proper documentation make a program easy to read and help programmers prevent errors.
+Programming style deals with what programs look like. A program can compile and run properly even if written on only one line, but writing it all on one line would be bad programming style because it would be hard to read. Documentation is the body of explanatory remarks and comments pertaining to a program. Programming style and documentation are as important as coding. Good programming style and appropriate documentation reduce the chance of errors and make programs easy to read. This section gives several guidelines. For more detailed guidelines, see Supplement I.D, Java Coding Style Guidelines, on the Companion Website.
+
+programming style
+
+documentation
+
+
+1.9.1 Appropriate Comments and Comment Styles
+
+Include a summary at the beginning of the program that explains what the program does, its key features, and any unique techniques it uses. In a long program, you should also include comments that introduce each major step and explain anything that is difficult to read. It is important to make comments concise so that they do not crowd the program or make it difficult to read.
+In addition to line comments (beginning with //) and block comments (beginning with /*), Java supports comments of a special type, referred to as javadoc comments. javadoc comments begin with /** and end with */. They can be extracted into an HTML file using the JDK’s javadoc command. For more information, see Supplement III.Y, javadoc Comments, on the Companion Website.
+
+javadoc comment
+Use javadoc comments (/** . . . */) for commenting on an entire class or an entire method. These comments must precede the class or the method header in order to be extracted into a javadoc HTML file. For commenting on steps inside a method, use line comments (//). To see an example of a javadoc HTML file, check out liveexample.pearsoncmg.com/javadoc/Exercise1.html. Its corresponding Java code is shown in liveexmple.pearsoncmg.com/javadoc/Exercise1.txt.
+
+
+1.9.2 Proper Indentation and Spacing
+
+A consistent indentation style makes programs clear and easy to read, debug, and maintain. Indentation is used to illustrate the structural relationships between a program’s components or statements. Java can read the program even if all of the statements are on the same long line, but humans find it easier to read and maintain code that is aligned properly. Indent each subcomponent or statement at least two spaces more than the construct within which it is nested.
+
+indent code
+A single space should be added on both sides of a binary operator, as shown in (a), rather in (b).
+
+
+System.out.println(3 + 4 * 4);
+System.out.println(3+4*4);
+(a) Good style
+(b) Bad style
+
+
+1.9.3 Block Styles
+
+A block is a group of statements surrounded by braces. There are two popular styles, next-line style and end-of-line style, as shown below.
+
+public class Test
+{
+  public static void main(String[] args) 
+  {
+    System.out.println("Block Styles");
+  }
+}public class Test {
+  public static void main(String[] args) {
+    System.out.println("Block Styles");
+  }
+}
+Next-line style
+End-of-line style
+The next-line style aligns braces vertically and makes programs easy to read, whereas the end-of-line style saves space and may help avoid some subtle programming errors. Both are acceptable block styles. The choice depends on personal or organizational preference. You should use a block style consistently—mixing styles is not recommended. This book uses the end-of-line style to be consistent with the Java API source code.
+
+
+
+1.9.1 Reformat the following program according to the programming style and documentation guidelines. Use the end-of-line brace style.public class Test
+{
+  // Main method
+public static void main(String[] args) {
+  /** Display output */
+  System.out.println("Welcome to Java");
+	  }
+}
+
+
+
+
+(Liang 18-19)
+Liang, Y. D. Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition. Pearson, 20170612. VitalBook file.
+The citation provided is a guideline. Please check each citation for accuracy before use.

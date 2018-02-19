@@ -1,0 +1,192 @@
+
+Typesetting math: 100%
+
+
+
+1.7 A Simple Java Program
+
+
+
+A Java program is executed from the main method in the class.
+Let’s begin with a simple Java program that displays the message Welcome to Java! on the console. (The word console is an old computer term that refers to the text entry and display device of a computer. Console input means to receive input from the keyboard, and console output means to display output on the monitor.) The program is given in Listing 1.1.
+
+what is a console?
+
+console input
+
+console output
+
+
+Listing  1.1 Welcome.java
+class				1  public class Welcome {
+main method			2    public static void main(String[] args) {
+display message			3      // Display message Welcome to Java! on the console
+				4      System.out.println("Welcome to Java!");
+				5    }
+				6  } 
+
+
+Welcome to Java!
+
+
+Your first Java program
+Note the line numbers are for reference purposes only; they are not part of the program. So, don’t type line numbers in your program.
+
+line numbers
+Line 1 defines a class. Every Java program must have at least one class. Each class has a name. By convention, class names start with an uppercase letter. In this example, the class name is Welcome.
+
+class name
+Line 2 defines the main method. The program is executed from the main method. A class may contain several methods. The main method is the entry point where the program begins execution.
+
+main method
+A method is a construct that contains statements. The main method in this program contains the System.out.println statement. This statement displays the string Welcome to Java! on the console (line 4). String is a programming term meaning a sequence of characters. A string must be enclosed in double quotation marks. Every statement in Java ends with a semicolon (;), known as the statement terminator.
+
+string
+
+statement terminator
+Reserved words, or keywords, have a specific meaning to the compiler and cannot be used for other purposes in the program. For example, when the compiler sees the word class, it understands that the word after class is the name for the class. Other reserved words in this program are public, static, and void.
+
+reserved word
+
+keyword
+Line 3 is a comment that documents what the program is and how it is constructed. Comments help programmers to communicate and understand the program. They are not programming statements, and thus are ignored by the compiler. In Java, comments are preceded by two slashes (//) on a line, called a line comment, or enclosed between /* and */ on one or several lines, called a block comment or paragraph comment. When the compiler sees //, it ignores all text after // on the same line. When it sees /*, it scans for the next */ and ignores any text between /* and */. Here are examples of comments:
+
+comment
+
+line comment
+
+block comment// This application program displays Welcome to Java!
+/* This application program displays Welcome to Java! */
+/* This application program
+   displays Welcome to Java! */
+A pair of braces in a program forms a block that groups the program’s components. In Java, each block begins with an opening brace ({) and ends with a closing brace (}). Every class has a class block that groups the data and methods of the class. Similarly, every method has a method block that groups the statements in the method. Blocks can be nested, meaning that one block can be placed within another, as shown in the following code:
+
+block
+
+match braces
+ Unnumbered code diagram Identifying blocks in code. 
+
+
+Description
+
+
+
+ Tip 
+
+An opening brace must be matched by a closing brace. Whenever you type an opening brace, immediately type a closing brace to prevent the missing-brace error. Most Java IDEs automatically insert the closing brace for each opening brace.
+
+
+ Caution 
+
+Java source programs are case sensitive. It would be wrong, for example, to replace main in the program with Main.
+
+case sensitive
+You have seen several special characters (e.g., { }, //, ;) in the program. They are used in almost every program. Table 1.2 summarizes their uses.
+
+special characters
+
+
+
+Table  1.2 Special Characters
+
+
+
+
+Character
+
+Name
+
+Description
+
+{}
+Opening and closing braces
+Denote a block to enclose statements.
+()
+Opening and closing parentheses
+Used with methods.
+[]
+Opening and closing brackets
+Denote an array.
+//
+Double slashes
+Precede a comment line.
+""
+Opening and closing quotation marks
+Enclose a string (i.e., sequence of characters).
+;
+Semicolon
+Mark the end of a statement.
+
+common errors
+The most common errors you will make as you learn to program will be syntax errors. Like any programming language, Java has its own syntax, and you need to write code that conforms to the syntax rules. If your program violates a rule—for example, if the semicolon is missing, a brace is missing, a quotation mark is missing, or a word is misspelled—the Java compiler will report syntax errors. Try to compile the program with these errors and see what the compiler reports.
+
+syntax rules
+
+
+ Note 
+
+You are probably wondering why the main method is defined this way and why ­System.out.println(...) is used to display a message on the console. For the time being, simply accept that this is how things are done. Your questions will be fully answered in subsequent chapters.
+The program in Listing 1.1 displays one message. Once you understand the program, it is easy to extend it to display more messages. For example, you can rewrite the program to display three messages, as shown in Listing 1.2.
+
+
+Listing  1.2 WelcomeWithThreeMessages.java
+class			1  public class WelcomeWithThreeMessages {
+main method		2    public static void main(String[] args) {
+display message		3      System.out.println("Programming is fun!");
+			4      System.out.println("Fundamentals First");
+			5      System.out.println("Problem Driven");
+			6    }
+			7  }
+
+
+Programming is fun!
+Fundamentals First
+Problem Driven
+Further, you can perform mathematical computations and display the result on the console. Listing 1.3 gives an example of evaluating 
+10.5+2×3
+45-3.5
+.
+10.5+2×345-3.5.
+
+
+
+Listing  1.3 ComputeExpression.java
+class			1  public class ComputeExpression {
+main method		2    public static void main(String[] args) {
+compute expression	3      System.out.print("(10.5 + 2 * 3) / (45 – 3.5) = ");
+			4      System.out.println((10.5 + 2 * 3) / (45 – 3.5));
+			5    }
+			6  }
+
+
+(10.5 + 2 * 3) / (45 – 3.5) = 0.39759036144578314
+The print method in line 3
+System.out.print("(10.5 + 2 * 3) / (45 – 3.5) = ");
+
+print vs. println
+is identical to the println method except that println moves to the beginning of the next line after displaying the string, but print does not advance to the next line when completed.
+The multiplication operator in Java is *. As you can see, it is a straightforward process to translate an arithmetic expression to a Java expression. We will discuss Java expressions fur­ther in Chapter 2.
+
+
+
+1.7.1 What is a keyword? List some Java keywords.
+
+1.7.2 Is Java case sensitive? What is the case for Java keywords?
+
+1.7.3 What is a comment? Is the comment ignored by the compiler? How do you denote a comment line and a comment paragraph?
+
+1.7.4 What is the statement to display a string on the console?
+
+1.7.5 Show the output of the following code:public class Test {
+  public static void main(String[] args) {
+    System.out.println("3.5 * 4 / 2 – 2.5 is ");
+    System.out.println(3.5 * 4 / 2 – 2.5);
+  }
+}
+
+
+
+
+(Liang 12-15)
+Liang, Y. D. Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition. Pearson, 20170612. VitalBook file.
+The citation provided is a guideline. Please check each citation for accuracy before use.
